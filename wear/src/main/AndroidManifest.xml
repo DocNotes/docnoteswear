@@ -16,13 +16,21 @@
             android:name="com.google.android.wearable"
             android:required="false" />
 
-        <activity
+        <!--<activity
             android:name=".MainActivity"
             android:label="@string/app_name"
             android:theme="@android:style/Theme.DeviceDefault.Light">
-            <intent-filter>
+            &lt;!&ndash;<intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>&ndash;&gt;
+        </activity>-->
+        <activity
+            android:name=".GridViewPagerActivity"
+            android:label="@string/title_activity_grid_view_pager">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

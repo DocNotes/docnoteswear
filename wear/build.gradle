@@ -16,6 +16,7 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            debuggable true
         }
     }
 }
@@ -24,5 +25,6 @@ dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     compile 'com.google.android.support:wearable:1.4.0'
     compile 'com.google.code.gson:gson:2.2.+'
+    compile "com.android.support:design:23.2.1"
     compile 'com.google.android.gms:play-services-wearable:9.0.1'
 }
